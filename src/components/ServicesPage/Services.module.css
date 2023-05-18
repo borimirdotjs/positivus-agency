@@ -1,0 +1,128 @@
+@import "../../App.css";
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.cards {
+  display: grid;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+}
+
+.card span {
+  background-color: var(--green);
+  border-radius: 7px;
+  padding: 0px 7px;
+}
+
+.card {
+  padding: 3rem;
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px #191a23;
+  border-radius: 45px;
+  max-width: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.card button {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  align-self: end;
+  border: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 {
+  font-size: var(--h3mob);
+  font-weight: 500;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:nth-child(3n-2) {
+  background-color: var(--grey);
+}
+.card:nth-child(3n-2) button {
+  background-color: var(--black);
+}
+.card:nth-child(3n-2) .arrow {
+  fill: var(--green);
+}
+
+.card:nth-child(3n-1) {
+  background-color: var(--green);
+}
+.card:nth-child(3n-1) span {
+  background-color: var(--grey);
+}
+.card:nth-child(3n-1) button {
+  background-color: var(--black);
+}
+.card:nth-child(3n-1) .arrow {
+  fill: var(--green);
+}
+
+.card:nth-child(3n) {
+  background-color: var(--black);
+}
+.card:nth-child(3n) span {
+  background-color: var(--grey);
+}
+.card:nth-child(3n) button {
+  background-color: var(--grey);
+}
+
+@media screen and (min-width: 992px) {
+  .title p {
+    max-width: 580px;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .card {
+    min-height: 310px;
+    align-items: center;
+  }
+  .card img {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .card h3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
+  .card button::after {
+    content: "Learn more";
+    font-size: 20px;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: max-content;
+    left: 3rem;
+  }
+  .card:nth-child(3n) button::after {
+    color: white;
+  }
+}

@@ -1,38 +1,91 @@
+:root {
+  --green: #b9ff66;
+  --grey: #f3f3f3;
+  --black: #191a23;
+  --p: 18px;
+  --h1: 60px;
+  --h2: 40px;
+  --h3: 30px;
+  --h4: 20px;
+  --pmob: 16px;
+  --h1mob: 43px;
+  --h2mob: 36px;
+  --h3mob: 26px;
+  --h4mob: 18px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+button,
+textarea,
+input {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 500;
+}
+
+button,
+li {
+  cursor: pointer;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  place-self: center;
+  width: 100%;
+}
+
 .App {
-  text-align: center;
+  max-width: 1440px;
+  padding: 1rem 5% 0 5%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+section {
+  margin-top: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* h2 headings and p tags styles*/
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.title {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 1rem;
+  margin: 2rem 0rem;
 }
 
-.App-link {
-  color: #61dafb;
+.title h2 {
+  font-size: var(--h2mob);
+  background-color: var(--green);
+  border-radius: 7px;
+  padding: 0px 7px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title p {
+  font-size: var(--pmob);
+  text-align: center;
+  font-weight: 400;
+  text-justify: newspaper;
+}
+
+@media screen and (min-width: 992px) {
+  .title {
+    flex-direction: row;
   }
-  to {
-    transform: rotate(360deg);
+
+  .title h2 {
+    font-size: var(--h2);
+  }
+
+  .title p {
+    max-width: 580px;
+    text-align: start;
+    font-size: var(--p);
   }
 }

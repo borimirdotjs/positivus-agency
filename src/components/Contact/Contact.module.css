@@ -1,0 +1,113 @@
+@import "../../App.css";
+
+#contact__form {
+  background-color: var(--grey);
+  padding: 6% 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 45px;
+}
+
+.radio__buttons {
+  display: flex;
+  gap: 1rem;
+  place-content: center;
+  justify-content: space-around;
+}
+
+.radio__buttons input {
+  margin-right: 0.3rem;
+  cursor: pointer;
+  accent-color: var(--green);
+}
+
+.inputs__container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.inputs__container label {
+  font-size: 14px;
+}
+
+.inputs__container input,
+.inputs__container textarea {
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid black;
+  resize: none;
+  transition: all 0.3s ease;
+}
+
+.inputs__container input:focus,
+.inputs__container textarea:focus {
+  outline: none;
+  border: 1px solid var(--green);
+}
+
+.submit__btn {
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 14px;
+  padding: 20px 35px;
+  border: none;
+  background-color: var(--black);
+  color: white;
+}
+
+.submit__btn:disabled {
+  background-color: rgb(134, 134, 134);
+  cursor: not-allowed;
+}
+
+.submit__btn.inner {
+  display: none;
+}
+
+.image__container {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .form__container {
+    background-color: var(--grey);
+    border-radius: 45px;
+    position: relative;
+    overflow: hidden;
+  }
+  #contact__form {
+    max-width: 60%;
+  }
+
+  .radio__buttons {
+    place-content: start;
+  }
+
+  .submit__btn.inner {
+    display: block;
+  }
+
+  .submit__btn {
+    display: none;
+  }
+
+  .image__container {
+    display: inline-block;
+    position: absolute;
+    right: -20rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 80%;
+    align-self: center;
+    overflow: hidden;
+  }
+
+  .image__container img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}

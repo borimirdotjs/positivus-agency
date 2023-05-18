@@ -1,0 +1,76 @@
+@import "../../App.css";
+
+.testimonials__carousel {
+  overflow: hidden;
+  background-color: var(--black);
+  border-radius: 45px;
+  color: white;
+  padding: 2rem;
+}
+
+.testimonial__container {
+}
+
+.text__container {
+  border: 2px solid var(--green);
+  border-radius: 45px;
+  margin: 2rem 0rem;
+}
+
+.text__container::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50px;
+  right: auto;
+  top: auto;
+  bottom: calc(2rem - 5px);
+  border: 25px solid;
+  border-color: var(--green) transparent transparent;
+}
+
+.text__container::after {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 50px;
+  right: auto;
+  top: auto;
+  bottom: 2rem;
+  border: 25px solid;
+  border-color: var(--black) transparent transparent;
+}
+
+.text {
+  padding: 8%;
+  font-size: var(--pmob);
+  font-weight: 400;
+}
+
+.testimonial__author {
+  padding-left: 10%;
+}
+
+.testimonial__author h4 {
+  color: var(--green);
+  font-size: var(--h4mob);
+  font-weight: 500;
+}
+
+.testimonial__author p {
+  font-size: var(--pmob);
+  font-weight: 400;
+}
+
+.splide__arrows {
+  width: 60%;
+  place-content: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.splide__arrows button:nth-of-type(1) {
+  transform: rotate(180deg);
+}

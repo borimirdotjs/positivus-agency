@@ -1,0 +1,110 @@
+/* Studies carousel styling */
+
+#splide01 {
+  background-color: transparent;
+  color: white;
+  overflow-x: hidden;
+  margin-top: 0 !important;
+}
+
+#splide01 .single__slide {
+  background-color: var(--black);
+  border-radius: 20px;
+}
+
+#splide01 .splide__arrows {
+  display: none;
+}
+
+#splide01 .splide__pagination {
+  display: none;
+}
+
+#splide01 .splide__list {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+/* Testimonials carousel styling */
+
+#splide02 {
+  display: flex;
+  flex-direction: column;
+}
+
+#splide02 .splide__track {
+}
+
+#splide02 .splide__slide {
+  max-width: 600px;
+}
+
+#splide02 .splide__list {
+  gap: 10%;
+}
+
+#splide02 .splide__arrows {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+#splide02 .splide__arrow:nth-of-type(1) {
+  transform: rotate(180deg);
+}
+
+#splide02 .splide__pagination {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
+#splide02 .splide__pagination button {
+  width: 10px;
+  height: 10px;
+  border: none;
+}
+
+#splide02 .splide__pagination button.is-active {
+  background-color: var(--green);
+}
+
+#splide02 .splide__arrow {
+  background-color: transparent;
+  border: none;
+}
+#splide02 .splide__arrow svg {
+  fill: var(--grey);
+}
+
+#splide02 .splide__arrow:disabled svg {
+  fill: rgb(109, 109, 109);
+}
+@media screen and (min-width: 992px) {
+  #splide01 {
+    background-color: var(--black);
+    border-radius: 45px;
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  #splide01 .single__slide {
+    cursor: auto;
+    align-items: center;
+  }
+
+  #splide01 .splide__list {
+    justify-content: space-around;
+  }
+
+  #splide01 .single__slide:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    border-radius: 0;
+  }
+}

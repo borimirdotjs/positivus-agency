@@ -1,0 +1,40 @@
+@import "../../App.css";
+
+.studies {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+
+.slider {
+  margin: 12%;
+}
+
+.slider p {
+  max-width: 286px;
+  font-size: var(--pmob);
+  font-weight: 400;
+}
+
+.slider button {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  border: none;
+  background-color: transparent;
+  color: var(--green);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.arrow {
+  fill: var(--green);
+}
+
+@media screen and (min-width: 992px) {
+  .studies {
+    align-items: flex-start;
+  }
+}

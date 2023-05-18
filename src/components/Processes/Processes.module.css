@@ -1,0 +1,89 @@
+@import "../../App.css";
+
+.processes {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+}
+
+/* Accordion styling */
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.process__title {
+  display: flex;
+  align-items: center;
+}
+
+.visible__part {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.single__item {
+  display: flex;
+  flex-flow: column;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--grey);
+  border: 1px solid #191a23;
+  box-shadow: 0px 5px 0px #191a23;
+  border-radius: 45px;
+  cursor: pointer;
+}
+
+.single__item span {
+  margin-right: 2rem;
+  font-size: 30px;
+}
+
+.single__item h4 {
+  font-size: var(--h4mob);
+  margin-right: 1rem;
+}
+
+.single__item svg {
+  width: 30px;
+  margin-left: auto;
+  justify-self: end;
+}
+
+.description hr {
+  background-color: #191a23;
+  height: 1px;
+  border: none;
+  margin: 2rem 0rem;
+}
+
+.description p {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.2s all ease;
+  font-size: var(--pmob);
+  text-justify: newspaper;
+}
+
+@media screen and (min-width: 992px) {
+  .processes {
+    align-items: flex-start;
+  }
+  .single__item span {
+    font-size: 60px;
+  }
+  .single__item h4 {
+    font-size: var(--h4);
+  }
+  .single__item svg {
+    width: 58px;
+  }
+}
