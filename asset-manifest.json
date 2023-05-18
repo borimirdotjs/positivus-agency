@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/positivus-agency/static/css/main.19033e89.css",
+    "main.js": "/positivus-agency/static/js/main.20f4a942.js",
+    "static/media/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.png": "/positivus-agency/static/media/tokyo-volumetric-analytics-of-different-types-in-web-browsers 2.1d95b87f5e445c1ca4a9.png",
+    "static/media/tokyo-many-browser-windows-with-different-information 1.png": "/positivus-agency/static/media/tokyo-many-browser-windows-with-different-information 1.2147d5e946b21539e314.png",
+    "static/media/tokyo-sending-messages-from-one-place-to-another 1.png": "/positivus-agency/static/media/tokyo-sending-messages-from-one-place-to-another 1.f5df2cf7bdcc867f8d6d.png",
+    "static/media/hero.svg": "/positivus-agency/static/media/hero.fb337848b4c02739752ae9d354762635.svg",
+    "static/media/tokyo-magnifier-web-search-with-elements 2.png": "/positivus-agency/static/media/tokyo-magnifier-web-search-with-elements 2.19d3b4058411c834841b.png",
+    "static/media/tokyo-selecting-a-value-in-the-browser-window 1.png": "/positivus-agency/static/media/tokyo-selecting-a-value-in-the-browser-window 1.f41a97ca557c67600a72.png",
+    "static/media/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.png": "/positivus-agency/static/media/tokyo-browser-window-with-emoticon-likes-and-stars-around 2.2e8b1c5e5295475f28c4.png",
+    "static/media/michaelbrown.png": "/positivus-agency/static/media/michaelbrown.2a77ab265482bde9e5ed.png",
+    "static/media/emilyjohnson.png": "/positivus-agency/static/media/emilyjohnson.ea6a58f59efc732c97da.png",
+    "static/media/johnsmith.png": "/positivus-agency/static/media/johnsmith.d3608198e5713f8fc16e.png",
+    "static/media/sarahkim.png": "/positivus-agency/static/media/sarahkim.74b673783e9b6bdee96a.png",
+    "static/media/janedoe.png": "/positivus-agency/static/media/janedoe.01469c0e779d2df9019a.png",
+    "static/media/brianwilliams.png": "/positivus-agency/static/media/brianwilliams.ae5d4e5efe096fa972c6.png",
+    "static/media/footer-logo.svg": "/positivus-agency/static/media/footer-logo.16142da82200943a8fbe2adef8b0705e.svg",
+    "static/media/logo-black.svg": "/positivus-agency/static/media/logo-black.56e581192b454f59bc19c9c554fe74aa.svg",
+    "static/media/contact-form.svg": "/positivus-agency/static/media/contact-form.fe0f689f729fc074e65e84c45d3803bf.svg",
+    "static/media/cta-illustration.svg": "/positivus-agency/static/media/cta-illustration.4c73b3c798b287d2a08decf967c2df09.svg",
+    "static/media/twitter-logo.svg": "/positivus-agency/static/media/twitter-logo.a5b8dc6b495277a9c2cfe4fa40599da1.svg",
+    "index.html": "/positivus-agency/index.html",
+    "static/media/linkedin-logo.svg": "/positivus-agency/static/media/linkedin-logo.97a2df12600d12d2c66160c1ba0d6422.svg",
+    "static/media/linkedinicon.svg": "/positivus-agency/static/media/linkedinicon.208039a9c372f76db79065b447523299.svg",
+    "static/media/fb-logo.svg": "/positivus-agency/static/media/fb-logo.3126db87b022dde984e723db80d77ad1.svg",
+    "main.19033e89.css.map": "/positivus-agency/static/css/main.19033e89.css.map",
+    "main.20f4a942.js.map": "/positivus-agency/static/js/main.20f4a942.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19033e89.css",
+    "static/js/main.20f4a942.js"
+  ]
+}
